@@ -1,0 +1,21 @@
+{
+	"name": "HTML5 Video Hotkeys",
+	"version": "0.1.2",
+	"description": "Use YouTube-like hotkeys for the standard HTML5 video player.",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"css": [
+				"style.css"
+			],
+			"js": [
+				"script.js"
+			],
+			"matches": [
+				"<all_urls>"
+			],
+			"run_at": "document_idle"
+		}
+	],
+	"minimum_chrome_version": "50"
+}
